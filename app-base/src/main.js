@@ -15,7 +15,7 @@ registerMicroApps(
     [
         {
             name: 'oneApp',
-            entry: '//localhost:9517', // 默认会加载这个html 解析里面的js 动态的执行（子应用必须支持跨域， 请求方式fetch）
+            entry: '/child/one/', // 默认会加载这个html 解析里面的js 动态的执行（子应用必须支持跨域， 请求方式fetch）
             container: '#vueOne',
             activeRule: '/one',
             props: {
@@ -24,7 +24,7 @@ registerMicroApps(
         },
         {
             name: 'twoApp',
-            entry: '//localhost:9518', // 默认会加载这个html 解析里面的js 动态的执行（子应用必须支持跨域， 请求方式fetch）
+            entry: '/child/two/', // 默认会加载这个html 解析里面的js 动态的执行（子应用必须支持跨域， 请求方式fetch）
             container: '#vueTwo',
             activeRule: '/two'
         },
